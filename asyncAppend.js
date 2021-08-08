@@ -6,11 +6,11 @@ fs.readFile('input.txt', function (err, data) {
 
 	console.log(data.toString());
 	console.log("End reading");
+  console.log("Begin appending file");
 
-fs.appendFile('input.txt', 'I am appending a file', function (err, data) {
+fs.appendFile('input.txt', 'I am appending a file.', function (err, data) {
   if (err) return console.error(err);
 
-  console.log("Begin appending file");
   console.log("End appending file");
   console.log("Begin re-reading file");
 
@@ -22,5 +22,5 @@ fs.readFile('input.txt', function (err, anotherData) {
    
 	});
 });
-
 });
+
